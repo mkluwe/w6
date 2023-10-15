@@ -1,0 +1,5 @@
+CFLAGS += -Wall -std=c++20
+# CFLAGS += -O0 -g
+CFLAGS += -O3
+: foreach *.cpp |> g++ $(CFLAGS) -c %f -o %o |> %B.o
+: *.o |> g++ %f -o %o |> w6

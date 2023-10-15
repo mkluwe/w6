@@ -1,0 +1,7 @@
+IndentWidth: 4
+SpacesInAngles: Always
+SpacesInParens: Custom
+SpacesInParensOptions:
+  InConditionalStatements: true
+  Other: true
+SpacesInSquareBrackets: true
