@@ -2,4 +2,4 @@
 
 #include "types.h"
 
-void writeWords( const char *filename, const std::vector< Word > &words );
+void writeWords( const char *filename, std::vector< Word > &words );
