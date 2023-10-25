@@ -81,7 +81,7 @@ void guess( std::vector< Word > &complete_words ) {
     std::vector< bool > correct( std::tuple_size_v< Word >, false );
     auto words = complete_words;
     std::cout << '[' << words.size() << "]\n";
-    Word current = select_random( words );
+    Word current = words[ 0 ];
     std::cout << current << std::endl;
     for ( std::string input; input != "Q"; getline( std::cin, input ) ) {
         if ( input == "" ) {
@@ -91,7 +91,7 @@ void guess( std::vector< Word > &complete_words ) {
             remove_from( complete_words, current );
             remove_from( words, current );
             std::cout << '[' << words.size() << "]\n";
-            current = select_random( words );
+            current = words[ 0 ];
             std::cout << current << std::endl;
             continue;
         }
@@ -105,7 +105,7 @@ void guess( std::vector< Word > &complete_words ) {
             if ( words.size() == 0 ) {
                 return;
             }
-            current = select_random( words );
+            current = words[ 0 ];
             std::cout << current << std::endl;
             continue;
         }
