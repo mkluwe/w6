@@ -3,6 +3,8 @@
 #include <array>
 #include <ostream>
 
-using Word = std::array< char, 6 >;
+template < size_t N >
+using Word = std::array< char, N >;
 
-std::ostream &operator<<( std::ostream &os, const Word &w );
+template < size_t N >
+std::ostream &operator<<( std::ostream &os, const Word< N > &w );

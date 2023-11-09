@@ -13,6 +13,9 @@
 				"kind": "build",
 				"isDefault": true
 			},
+			"problemMatcher": [
+				"$gcc"
+			],
 			"detail": "compiler: tup"
 		}
 	]
